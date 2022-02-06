@@ -105,11 +105,7 @@ public class Main {
         str1 = new String(strCharArray1);
         str2 = new String(strCharArray2);
 
-        if (str1.equals(str2)) {
-            return true;
-        }
-
-        return false;
+        return str1.equals(str2);
     }
 
     // 5
@@ -118,12 +114,7 @@ public class Main {
         if (year % 4 == 0) {
             isLeapYear = true;
             if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    isLeapYear = true;
-                }
-                else {
-                    isLeapYear = false;
-                }
+                isLeapYear = year % 400 == 0;
             }
         } else {
             isLeapYear = false;
@@ -144,7 +135,7 @@ public class Main {
         }else{
             caseCondition = 4;
         }
-        double bill = 0;
+        double bill;
         switch (caseCondition) {
             case 1:
                 bill = 200;
