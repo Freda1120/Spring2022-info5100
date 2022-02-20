@@ -5,6 +5,6 @@ public class Professor extends Person{
         super(name, age, id);
     }
     public void giveQuiz(String quiz){
-        System.out.println("Professor gives" + quiz);
+        System.out.println("Professor" + this.name + "gives" + quiz);
     }
 }
