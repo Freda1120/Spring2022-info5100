@@ -42,16 +42,14 @@ public class Main {
         // Q3:
         System.out.println("------------Q3------------");
         Psychiatrist psychiatrist1 = new Psychiatrist("First", new Happy());
-        Psychiatrist psychiatrist2 = new Psychiatrist("First", new Happy());
+        Psychiatrist psychiatrist2 = new Psychiatrist("First", new Sad());
 
 
         psychiatrist1.examine(psychiatrist1.moody);
         psychiatrist1.observe(psychiatrist1.moody);
-        psychiatrist1.toString();
         System.out.println("----------");
         psychiatrist2.examine(psychiatrist2.moody);
         psychiatrist2.observe(psychiatrist2.moody);
-        psychiatrist2.toString();
 
         // Q4 is in Class Client
 
