@@ -28,9 +28,8 @@ public class Student {
     }
 
     public void printDetail(){
-        System.out.println("Name: " + this.name + " studentID: "+ this.studentID + " GPA: " + this.gpa);
+        System.out.println("Name: " + this.name + " studentID: " + this.studentID + " GPA: " + this.gpa);
     }
-
 
     public int getStudentID() {
         return studentID;
@@ -47,6 +46,7 @@ public class Student {
     public void setGpa(float gpa) {
         this.gpa = gpa;
     }
+
     public void setName(String name) {
         this.name = name;
     }
