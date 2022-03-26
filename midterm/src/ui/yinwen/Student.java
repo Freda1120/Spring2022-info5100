@@ -2,48 +2,42 @@ package ui.yinwen;
 
 public class Student {
     public String name;
-    public int age;
-    public double gpa;
+    public int studentID;
+    public float gpa;
 
-//    public Student(String name, int age, double gpa){
-//        this.name = name;
-//        this.age = age;
-//        this.gpa = gpa;
-//    }
+    public Student(String name, int studentID, float gpa){
+        this.name = name;
+        this.studentID = studentID;
+        this.gpa = gpa;
+    }
 
 
     public Student(){
-        name = "Sample Employee";
-        age = 20;
-        gpa = 4.0;
+        name = "Sample Student";
+        studentID = 1;
+        gpa = 4.00f;
     }
 
-    //    public Employee(Employee employee){
-//        Employee emp = new Employee();
-//        this.name = employee.name;
-//        this.id = employee.id;
-//        this.dept = new Department("AA", 5);
-//
-//    }
+
     // Copy constructor
     public Student(Student student) {
         Student stu = new Student();
         this.name = student.name;
-        this.age = student.age;
+        this.studentID = student.studentID;
         this.gpa = student.gpa;
     }
 
     public void printDetail(){
-        System.out.println("Name: " + this.name + " Age: "+ this.age + " GPA: " + this.gpa);
+        System.out.println("Name: " + this.name + " Age: "+ this.studentID + " GPA: " + this.gpa);
     }
 
 
-    public int getAge() {
-        return age;
+    public int getStudentID() {
+        return studentID;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setStudentID(int studentID) {
+        this.studentID = studentID;
     }
 
     public double getGpa() {
