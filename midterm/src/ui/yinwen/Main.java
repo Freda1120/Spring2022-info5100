@@ -18,6 +18,7 @@ public class Main {
         ashish.setName("Ashish");
         ashish.setStudentID(2);
         ashish.setGpa((float)3.62);
+        // ashish and sample have different information
         ashish.printDetail();
         sample.printDetail();
 
@@ -25,11 +26,12 @@ public class Main {
 
         // shallow copy
         Student samp = new Student("sample", 1, (float) 3.4);
-        Student freda = samp;
-        freda.setName("Freda");
-        freda.setStudentID(5);
-        freda.setGpa((float)3.55);
-        freda.printDetail();
+        Student hello = samp;
+        hello.setName("Hello");
+        hello.setStudentID(5);
+        hello.setGpa((float)3.55);
+        // hello and samp have same information
+        hello.printDetail();
         samp.printDetail();
 
 

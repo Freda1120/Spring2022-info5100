@@ -13,7 +13,7 @@ public class Student {
 
 
     public Student(){
-        name = "Sample Student";
+        name = "Sample";
         studentID = 1;
         gpa = 4.00f;
     }
@@ -28,7 +28,7 @@ public class Student {
     }
 
     public void printDetail(){
-        System.out.println("Name: " + this.name + " Age: "+ this.studentID + " GPA: " + this.gpa);
+        System.out.println("Name: " + this.name + " studentID: "+ this.studentID + " GPA: " + this.gpa);
     }
 
 
