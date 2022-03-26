@@ -10,6 +10,7 @@ public class Happy extends Moody{
     void ExpressFeelings() {
         System.out.println("heeehee....hahahah...HAHAHA!!");
     }
+
     public String toString(){
         String mood = "Subject laughs a lot";
         return mood;

@@ -11,7 +11,6 @@ public class Sad extends Moody{
         System.out.println("‘waah’ ‘boo hoo’ ‘weep’ ‘sob‘");
     }
 
-
     public String toString() {
         return "Observation: Subject cries a lot";
     }
