@@ -12,7 +12,8 @@ public class Sad extends Moody{
     }
 
     public String toString() {
-        return "Observation: Subject cries a lot";
+        String mood = "Subject cries a lot";
+        return mood;
     }
 
 }
