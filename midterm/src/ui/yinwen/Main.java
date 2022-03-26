@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Q1:
-        // Shallow copy: Just point to the copied memory address. If the original address changes, the shallow copied object will also change accordingly.
+        // Shallow copy: Just point to the memory address. If the original address changes, the shallow copied object will also change accordingly.
         // Deep copy: Create a new memory address in the computer to store the copied object.
 
         System.out.println("------------Q1------------");
@@ -25,7 +25,7 @@ public class Main {
 
 
         // shallow copy
-        Student samp = new Student("sample", 1, (float) 3.4);
+        Student samp = new Student("sample", 1, (float) 3.41);
         Student hello = samp;
         hello.setName("Hello");
         hello.setStudentID(5);
