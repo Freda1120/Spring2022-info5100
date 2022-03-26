@@ -58,17 +58,16 @@ public class Main {
         // Q5:
         System.out.println("------------Q5------------");
 
-        Camera cam1 = Camera.getInstance();
+        Camera camera1 = Camera.getInstance();
+        camera1.setCameraName("Camera 1");
 
-        cam1.setCameraName("Camera 1");
+        Camera camera2 = Camera.getInstance();
+        System.out.println(camera1.getCameraName());
+        System.out.println(camera2.getCameraName());
 
-        Camera cam2 = Camera.getInstance();
-        System.out.println(cam1.getCameraName());
-        System.out.println(cam2.getCameraName());
-
-        cam2.setCameraName("Camera 2");
-        System.out.println(cam1.getCameraName());
-        System.out.println(cam2.getCameraName());
+        camera2.setCameraName("Camera 2");
+        System.out.println(camera1.getCameraName());
+        System.out.println(camera2.getCameraName());
 
         // Q6: Please see the Class Question 6
 
