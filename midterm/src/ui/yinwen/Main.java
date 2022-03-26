@@ -21,8 +21,6 @@ public class Main {
         ashish.printDetail();
         sample.printDetail();
 
-
-
         // shallow copy
         Student samp = new Student("sample", 1, (float) 3.41);
         Student hello = samp;
