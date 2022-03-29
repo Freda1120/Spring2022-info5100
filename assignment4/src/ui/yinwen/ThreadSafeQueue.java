@@ -6,7 +6,6 @@ import java.util.Queue;
 public class ThreadSafeQueue<T> {
     private Queue<T> safeQueue = new LinkedList<>();
 
-
     public void add(T data){
         synchronized (safeQueue){
             this.safeQueue.add(data);
